@@ -137,7 +137,7 @@ const SpinWheel = () => {
             <div className='h-[400vh] w-1/2  hidden md:flex  justify-center  py-16 '>
                 <div className='p-4 h-[70vh] w-[280px] lg:h-[80vh] lg:w-[320px] xl:h-[80vh] xl:w-[320px] border-style sticky top-32 overflow-hidden'>
                     <div className={`h-full w-[${3 * mobileWidth}px] flex 
-                    -translate-x-[${currentImage * (mobileWidth - 30)}px] transition-all delay-75`}>
+                    -translate-x-[${100 * currentImage}%] transition-all `}>
                         <Image src={ImgArray[0]} alt='multi-image' />
                         <Image src={ImgArray[1]} alt='multi-image' />
                         <Image src={ImgArray[2]} alt='multi-image' />
