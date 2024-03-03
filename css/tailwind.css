@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+
+    html,
+    body {
+        @apply bg-gray-900;
+    }
+
+    .big-text {
+        font-size: 6rem;
+        /* 96px */
+        line-height: 1;
+    }
+
+    @media screen and (max-width: 1270px) {
+        .big-text {
+            font-size: 4.5rem;
+            /* 72px */
+            line-height: 1;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .big-text {
+            font-size: 4.2rem;
+            /* 72px */
+            line-height: 1;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .big-text {
+            font-size: 3.5rem;
+        }
+    }
+
+    .smartphone-box {
+        height: 90%;
+    }
+
+
+    .move-center {
+        transform: translateY(-935px);
+    }
+
+    .move-left1 {
+        transform: translate(-18rem, -800px);
+    }
+
+    .move-left2 {
+        transform: translate(-32rem, -700px);
+    }
+
+    .move-right1 {
+        transform: translate(18rem, -800px);
+    }
+
+    .move-right2 {
+        transform: translate(32rem, -700px);
+    }
+
+    .outer-box {
+        height: 1000px;
+        padding-top: 16rem;
+    }
+
+
+    @media screen and (max-width:1230px) {
+        .smartphone-box {
+            height: 90%;
+        }
+
+        .outer-box {
+            height: 900px;
+            padding-top: 4rem;
+        }
+
+    }
+
+    @media screen and (max-width:1024px) {
+        .smartphone-box {
+            height: 90%;
+        }
+
+        .outer-box {
+            height: 700px;
+            padding-top: 0rem;
+        }
+
+
+        .move-center {
+            transform: translateY(-945px);
+        }
+
+        .move-left1 {
+            transform: translate(-12rem, -850px);
+        }
+
+        .move-left2 {
+            transform: translate(-20rem, -750px);
+        }
+
+        .move-right1 {
+            transform: translate(12rem, -850px);
+        }
+
+        .move-right2 {
+            transform: translate(20rem, -750px);
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .smartphone-box {
+            height: 90%;
+        }
+
+        .outer-box {
+            height: 600px;
+            padding-top: 0rem;
+        }
+
+
+        .move-center {
+            transform: translateY(-955px);
+        }
+
+        .move-left1 {
+            transform: translate(-8rem, -870px);
+        }
+
+        .move-right1 {
+            transform: translate(8rem, -870px);
+        }
+
+        .move-left2 {
+            transform: translate(-15rem, -770px);
+        }
+
+        .move-right2 {
+            transform: translate(15rem, -770px);
+        }
+
+    }
+
+    @media screen and (max-width:576px) {
+        .smartphone-box {
+            height: 90%;
+        }
+
+        .outer-box {
+            height: 400px;
+            padding-top: 0rem;
+        }
+
+
+        .move-center {
+            transform: translateY(-975px);
+        }
+
+        .move-left1 {
+            transform: translate(-6rem, -920px);
+        }
+
+        .move-right1 {
+            transform: translate(6rem, -920px);
+        }
+
+        .move-left2 {
+            transform: translate(-11rem, -850px);
+        }
+
+        .move-right2 {
+            transform: translate(11rem, -850px);
+        }
+    }
+
+
+
+    .navbar-animation {
+        position: fixed;
+        top: -200px;
+        transition: top 0.3s;
+
+    }
+
+    .large-rating {
+        font-size: 10rem;
+    }
+
+    @media screen and (max-width: 1030px) {
+        .large-rating {
+            font-size: 7rem;
+        }
+    }
+
+    .carsoule {
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+
+    @media screen and (max-width :767px) {
+        .carsoule {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    .lounge-cover {
+        height: 120vh;
+        padding-top: 10rem;
+        padding-left: 8rem;
+    }
+
+    .dog-cover {
+        height: 120vh;
+        padding-top: 10rem;
+        padding-left: 8rem;
+    }
+
+
+    @media screen and (max-width:1270px) {
+        .lounge-cover {
+            height: 100vh;
+            padding-top: 6rem;
+            padding-left: 3rem;
+
+        }
+
+        .dog-cover {
+            height: 100vh;
+            padding-top: 6rem;
+            padding-left: 3rem;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .lounge-cover {
+            height: 80vh;
+            padding-top: 3rem;
+            padding-left: 3rem;
+        }
+
+        .dog-cover {
+            height: 80vh;
+            padding-top: 3rem;
+            padding-left: 3rem;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .lounge-cover {
+            height: auto;
+        }
+
+        .dog-cover {
+            height: auto;
+            background-position: 68% 68%;
+        }
+    }
+
+  
+ 
+    .border-style {
+        box-shadow: rgba(250, 250, 255, 0.16) 0px -7px 10px 5px inset, rgba(38, 37, 37, 0.24) 6px 6px 11px 1px inset;
+        border-radius: 46px;
+    }
+
+   
+
+    .bg-parallex {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
